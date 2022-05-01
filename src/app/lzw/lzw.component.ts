@@ -65,14 +65,7 @@ export class LZWComponent implements OnInit {
       });
     });
 
-    this.displayDictionary.sort((a, b) => {
-      if(a.encoding > b.encoding)
-        return 1;
-      else if (b.encoding > a.encoding)
-        return -1;
-      else 
-        return 0;
-    });
+    this.displayDictionary.sort((a, b) => parseInt(a.encoding) - parseInt(b.encoding));
   }
 }
 
