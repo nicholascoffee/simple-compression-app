@@ -10,7 +10,7 @@
     <mat-form-field>
       <mat-label>Select an algoritm</mat-label>
 
-      <mat-select #algoritm>
+      <mat-select [(value)]="selected" #algoritm>
         <mat-option value="1">Huffman</mat-option>
         <mat-option value="3">LZW</mat-option>
       </mat-select>

@@ -9,5 +9,6 @@ export class AppComponent {
   title = 'compression-app';
   inputData = "";
   compressedData = "";
+  selected = "1";
 
 }
