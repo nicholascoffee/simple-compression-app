@@ -70,22 +70,8 @@ class PriorityNode<T> {
       return oldHead.value;
     }
   
-    public peek(): T | null {
-      return this.head ? this.head.value : null;
-    }
-  
     public isEmpty(): boolean {
       return this.head == null;
-    }
-  
-    public get data() {
-      const values = [];
-      let head = this.head;
-      while (head) {
-        values.push(head.value);
-        head = head.next;
-      }
-      return values;
     }
   }
   

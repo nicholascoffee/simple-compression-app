@@ -28,6 +28,7 @@ export class TreeNode {
         return result;
     }
 
+    //https://www.baeldung.com/java-print-binary-tree-diagram
     private traversePreOrderRec(result: string[], padding: string, pointer: string, node: TreeNode | null, hasRight: boolean) {
         if (node != null) {
             result.push(padding);
