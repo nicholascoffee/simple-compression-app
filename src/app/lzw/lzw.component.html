@@ -1,0 +1,38 @@
+<div class="center-div">
+    
+    <h2>LZW Compression</h2>
+
+</div>
+<div class="app-row" *ngIf="inputData !== '' ">
+    <div class="app-large-column">
+        <div class="center-div">
+            <mat-label class="compressed-result">{{ compressedData }}</mat-label>
+
+            <mat-label>Num of char: {{ numOfChar }}</mat-label>
+        </div>
+    </div>
+    <div class="app-small-column">
+        <div class="center-div">
+
+        <table mat-table [dataSource]="displayDictionary" class="mat-elevation-z8 table-dictionary">
+
+        <ng-container matColumnDef="char">
+        <th mat-header-cell *matHeaderCellDef> Char </th>
+        <td mat-cell *matCellDef="let element"> {{element.char}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="code">
+            <th mat-header-cell *matHeaderCellDef> Code </th>
+            <td mat-cell *matCellDef="let element"> {{element.encoding}} </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="center-div" *ngIf="inputData === ''">
+    <p>Type something in the box above</p>
+</div>
+

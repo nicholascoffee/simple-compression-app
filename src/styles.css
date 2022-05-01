@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.input-spacer {
+  padding-top: 2em;
+}
+
+.large-input {
+  min-width: 50%;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.compressed-result {
+  max-width: 80%;
+  font-size: 1.5em;
+}
+
+.table-dictionary {
+  width: 90%;
+}
+
+.app-row {
+  display: flex;
+}
+
+.app-column {
+  flex: 50%;
+}
+
+.app-large-column {
+  flex: 50%;
+}
+
+.app-small-column {
+  flex: 25;
+}
+
+.tree {
+  font-family:Courier;
+  white-space: pre;
+}
